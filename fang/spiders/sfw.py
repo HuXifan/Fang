@@ -70,13 +70,7 @@ class SfwSpider(scrapy.Spider):
             else:  # 发现有多余的不含有用信息的li 过滤掉
                 continue
             print(name)
-            house_type_text = li.xpath(".//div[contains(@class,'house_type')]//a/text()").getall()
-            rooms = house_type_text.join(house_type_text)
-            print(rooms)
-
-
-
-
+            house_type_text = li.xpath(".//div[contains(@class,'house_type')]//a/text()").getall()  # 返回居室的列表
 
     # 解析二手房数据
     def parse_esf(self, response):
