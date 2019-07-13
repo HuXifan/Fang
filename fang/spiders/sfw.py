@@ -168,7 +168,7 @@ class SfwSpider(scrapy.Spider):
 
             # 获取详情页url
             detail_url = dl.xpath(".//dd/h4/a/@href").get()
-            origin_url = response.urljoin(detail_url)
+            # origin_url = response.urljoin(detail_url)
             item['origin_url'] = response.urljoin(detail_url)
 
             yield item
