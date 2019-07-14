@@ -172,7 +172,7 @@ class SfwSpider(scrapy.Spider):
             item['origin_url'] = response.urljoin(detail_url)
 
             yield item
-        next_url = response.xpath("//div[@class='page_al']/p/a/@href").getall()[0]
+        next_url = response.xpath("//div[@class='page_al']/p/a/@href").get()
         # next_url = response.urljoin(next_url)  # 打印出来是随机的 没有意义
         if next_url:
             yield scrapy.Request(url=response.urljoin(next_url), callback=self.parse_esf,
