@@ -160,7 +160,7 @@ pyecharts-jupyter-installer==0.0.3
 pyecharts-snapshot==0.1.10
 pyflakes==1.6.0
 pygame==1.9.4
-Pygments==2.2.0
+Pygments==2.7.4
 PyHamcrest==1.9.0
 pylint==1.8.4
 PyMySQL==0.9.3
