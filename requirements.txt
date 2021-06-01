@@ -228,7 +228,7 @@ traitlets==4.3.2
 Twisted==19.2.0
 typing==3.6.4
 unicodecsv==0.14.1
-urllib3==1.22
+urllib3==1.26.5
 vboxapi==1.0
 virtualenv==16.4.1
 virtualenvwrapper-win==1.2.5
